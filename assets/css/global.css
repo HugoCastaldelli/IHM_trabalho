@@ -16,7 +16,6 @@ body {
     justify-content: space-around;
 }
 
-
 .icon {
     width: 28px;
     height: 28px;
@@ -29,7 +28,6 @@ body {
     height: 32px;
     object-fit: cover;
 }
-
 
 .profile {
     border-radius: 50%;
