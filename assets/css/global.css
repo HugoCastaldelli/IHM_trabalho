@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #2c3440;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #e2e6ea;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.icon {
+    width: 28px;
+    height: 28px;
+    background: #7fb3ff;
+    border-radius: 6px;
+}
+
+.icon-img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+}
+
+
+.profile {
+    border-radius: 50%;
+}
+
+.footer-item.active {
+    background: #6090C0;
+}
