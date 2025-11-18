@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Login</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../assets/css/login.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Habitos +</h1>
+    <p class="subtitle">Entre com uma conta.</p>
+    <p>Inclua seu e-mail e senha para acessar o programa.</p>
+
+    <input id="email" type="text" placeholder="email ou nome de usuario">
+    <input id="senha" type="password" placeholder="senha">
+
+    <button class="button" onclick="login()">Continuar</button>
+
+    <div class="divider"></div>
+
+    <button class="btn-google" onclick="social('google')">
+        <img src="../assets/icons/Google.png" width="22" style="margin-right:10px;">
+        Continuar com o Google
+    </button>
+
+    <button class="btn-apple" onclick="social('apple')">
+        <img src="../assets/icons/Apple.png" width="22" style="margin-right:10px;">
+        Continuar com a Apple
+    </button>
+
+    <small>Ao clicar em continuar, você concorda com nossos<br>
+    Termos de Serviço e com a Política de Privacidade</small>
+</div>
+
+<script src="../scripts/login.js"></script>
+</body>
+</html>
