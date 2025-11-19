@@ -25,8 +25,7 @@ function login() {
     const entradaLower = entrada.toLowerCase();
 
     if (users[entrada] && users[entrada].senha === senha) {
-        alert("Login efetuado!");
-        window.location.href = "home.html";
+        window.location.href = "loading.html";
         return;
     }
 
@@ -34,8 +33,7 @@ function login() {
         const user = users[email];
 
         if (user.nome.toLowerCase() === entradaLower && user.senha === senha) {
-            alert("Login efetuado!");
-            window.location.href = "home.html";
+            window.location.href = "loading.html";
             return;
         }
     }
