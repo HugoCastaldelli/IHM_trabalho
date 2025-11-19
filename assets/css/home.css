@@ -18,9 +18,9 @@
     justify-content: flex-start;
     align-items: center;
 
-    max-height: calc(100vh - 380px); 
+    max-height: calc(100vh - 380px);
     overflow-y: auto;
-    padding-right: 5px; 
+    padding-right: 5px;
 }
 
 .task-list::-webkit-scrollbar {
@@ -135,4 +135,85 @@
 .day.active {
     background: #e2e6ea;
     color: #000;
+}
+
+.week-bar {
+    position: fixed;
+    bottom: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+}
+
+/* modal de criação */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 999;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+.modal-overlay.show {
+    display: flex;
+}
+
+.modal {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    color: #000;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.modal h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+
+.modal input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #d0d6dd;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+    justify-content: flex-end;
+}
+
+.btn {
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn.primary {
+    background: #7fb3ff;
+    color: #fff;
+}
+
+.btn.ghost {
+    background: transparent;
+    color: #445066;
+}
+
+.footer-item {
+    background: none;
+    border: none;
 }
