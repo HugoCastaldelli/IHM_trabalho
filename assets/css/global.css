@@ -11,9 +11,9 @@ body {
     bottom: 0;
     width: 100%;
     background: #e2e6ea;
-    padding: 10px 0;
+    padding: 0; /* ajustar para que os itens preencham toda a altura */
     display: flex;
-    justify-content: space-around;
+    /* remover justify-content: space-around; pois os itens vão usar flex:1 */
 }
 
 .icon {
@@ -33,6 +33,18 @@ body {
     border-radius: 50%;
 }
 
+.footer-item {
+    flex: 1; /* divide o espaço igualmente */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0; /* define altura interna coerente com o footer */
+    margin: 0;
+    box-sizing: border-box;
+}
+
 .footer-item.active {
     background: #6090C0;
+    width: 100%;
+    height: 100%;
 }
